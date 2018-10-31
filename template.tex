@@ -1,0 +1,167 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{
+  \smartdiagram[bubble diagram]{
+    \textbf{Développeur}\\\textbf{cybersécurité},
+    \textbf{Gestion}\\\textbf{de projet},
+    \textbf{~~~~~~SIEM~~~~~~~},
+    \textbf{~~~~~IDMEF~~~~~},
+    \textbf{Méthodes}\\\textbf{agiles},
+    \textbf{Avant}\\\textbf{vente}
+  }
+}
+
+% Programming skill bars
+\programming{{C $\textbullet$ C++ $\textbullet$ \large \LaTeX / 2.5}, {SQL $\textbullet$ CSS $\textbullet$ HTML / 4}, {Python $\textbullet$ JavaScript / 5}}
+
+% Projects text
+\education{
+\textbf{Expert en technologies de l'information} \\
+EPITECH Paris \\
+2008 - 2014 | Paris, France
+
+\textbf{Information technology \& Computer science} \\
+Ahlia University \\
+2012 - 2013 | Manama, Bahrein
+}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{Camille GARDET} % Your name
+\cvjobtitle{Ingénieur développement} % Job
+% title/career
+
+\cvlinkedin{/in/cgardet}
+\cvgithub{M3nace}
+\cvnumberphone{06 70 15 71 59} % Phone number
+%\cvsite{} % Personal website
+\cvmail{gardet.ca@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Expériences}
+
+\begin{twenty} % Environment for a list with descriptions
+  \twentyitem
+      {Mai 2014}
+      {Aujourd'hui}
+      {Ingénieur d'études intégrateur}
+      {CS}
+      {}
+      {
+        \bigskip
+        Participation active dans le développement du produit \href{https://www.prelude-siem.com/}{Prelude SIEM} et dans les projets adjacents :
+        \\
+        \begin{itemize}
+        \item Recrutement et suivi des stagiaires
+        \item Participation à l'avant-vente du produit et réponse à appel d'offre
+        \item Participation aux salons du secteur
+        \item R\&D et innovation sur des fonctionnalités inédites du SIEM
+        \item Accompagnement et support client au travers de POC
+        \item Veille technique autour des éléments composant le SIEM comme les règles de détection, règles de corrélation, éléments web, etc.
+        \end{itemize}
+        \ \\
+        Promotion du format IDMEF, à travers le projet SECEF :
+        \\
+        \begin{itemize}
+        \item Rédaction d'études et de leurs résultats sur le format interopérable IDMEF et de sa nouvelle version
+        \item Distribution au format ouvert des outils de manipulation du format
+        \item Implémentation d'exemple d'utilisation et re-distribution à la communauté open source sur (\href{https://github.com/IDMEF-IODEF}{https://github.com/IDMEF-IODEF})
+        \end{itemize}
+      }
+      \\
+
+  \twentyitem
+      {Sept.}
+      {Déc. 2013}
+      {Professeur assistant}
+      {ETNA}
+      {}
+      {
+        \bigskip
+        \begin{itemize}
+        \item Encadrement des cours et des TP
+        \item Mise en place et application des tests d’évaluations
+        \end{itemize}
+      }
+      \\
+
+ \twentyitem
+     {Mai}
+     {Août 2012}
+     {Stage en développement logiciel}
+     {CS}
+     {}
+     {
+       \bigskip
+       \begin{itemize}
+       \item Conception et réalisation d’un outil de test pour la norme ED137 (nouveau protocole de communication)
+       \item Test et validation du système existant
+       \end{itemize}
+     }
+     \\
+
+ \twentyitem
+     {Sept. 2011}
+     {Avril 2012}
+     {Stage en administration réseau}
+     {Thales-Raytheon Systems}
+     {}
+     {
+       \bigskip
+       \begin{itemize}
+       \item Création d’un réseau IP supportant le transport de paquets X.25 et BSC
+       \item Intégration dans le système existant
+       \item Commande et renouvellement du matériel à des fins de mise à jour
+       \end{itemize}
+     }
+     \\
+
+ \twentyitem
+     {Août}
+     {Déc. 2009}
+     {Stage en développement web}
+     {Thales-Raytheon Systems}
+     {}
+     {
+       \bigskip
+       \begin{itemize}
+       \item Création d’un panneau de maintenance pour la supervision de plateformes et systèmes complexes
+       \item Fournir une nouvelle technologie au système existant pour accroître les performances et les possibilités d'évolutions
+       \end{itemize}
+     }
+
+      %\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\end{document}
